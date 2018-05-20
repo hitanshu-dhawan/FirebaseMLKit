@@ -12,4 +12,10 @@ ML Kit is a mobile SDK that brings Google's machine learning expertise to Androi
 <img src="/images/screenshot_02.jpg" height=512 width=288></img>
 <img src="/images/screenshot_03.jpg" height=512 width=288></img>
 
-### more ML Kit features coming soon...
+### Barcode Scanning (having some bugs as of now)
+!!! todo !!!
+
+### Image Labeling
+<img src="/images/screenshot_07.jpg" height=512 width=288></img>
+<img src="/images/screenshot_08.jpg" height=512 width=288></img>
+<img src="/images/screenshot_09.jpg" height=512 width=288></img>
