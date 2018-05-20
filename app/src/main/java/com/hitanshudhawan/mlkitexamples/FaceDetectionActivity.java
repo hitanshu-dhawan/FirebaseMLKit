@@ -93,6 +93,7 @@ public class FaceDetectionActivity extends AppCompatActivity {
     }
 
     private void addEmojis(Bitmap photo) {
+        if (photo == null) return;
         final Bitmap emojiPhoto = photo.copy(Bitmap.Config.ARGB_8888, true);
         final Canvas canvas = new Canvas(emojiPhoto);
 
@@ -154,12 +155,9 @@ public class FaceDetectionActivity extends AppCompatActivity {
                                         bitmap = Bitmap.createScaledBitmap(bitmap, width, height, false);
                                         canvas.drawBitmap(bitmap, mouthPosition.getX() - width, mouthPosition.getY() - height / 2, null);
                                     }
-
-
-                                    canvas.save();
-                                    imageView.setImageBitmap(emojiPhoto);
                                 }
-
+                                canvas.save();
+                                imageView.setImageBitmap(emojiPhoto);
                             }
                         });
     }
