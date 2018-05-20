@@ -16,13 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".FaceDetectionActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".BarcodeScanningActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".TextRecognitionActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FaceDetectionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BarcodeScanningActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TextRecognitionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ImageLabelingActivity"
+            android:parentActivityName=".MainActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -33,6 +38,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
     </application>
 
 </manifest>

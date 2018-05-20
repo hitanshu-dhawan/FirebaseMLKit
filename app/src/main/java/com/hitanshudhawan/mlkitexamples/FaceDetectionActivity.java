@@ -108,8 +108,7 @@ public class FaceDetectionActivity extends AppCompatActivity {
         FirebaseVisionFaceDetector detector = FirebaseVision.getInstance()
                 .getVisionFaceDetector(options);
         Task<List<FirebaseVisionFace>> result = detector.detectInImage(image)
-                .addOnSuccessListener(
-                        new OnSuccessListener<List<FirebaseVisionFace>>() {
+                .addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionFace>>() {
                             @Override
                             public void onSuccess(List<FirebaseVisionFace> faces) {
                                 // Task completed successfully

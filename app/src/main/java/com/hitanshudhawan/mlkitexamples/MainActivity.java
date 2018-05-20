@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BarcodeScanningActivity.class));
             }
         });
-//        findViewById(R.id.button_image_labeling).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, ImageLabelingActivity.class));
-//            }
-//        });
+        findViewById(R.id.button_image_labeling).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ImageLabelingActivity.class));
+            }
+        });
     }
 }
