@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.hitanshudhawan.firebasemlkitexample.barcodescanning.BarcodeScanningActivity
 import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
+import com.hitanshudhawan.firebasemlkitexample.imagelabeling.ImageLabelingActivity
 import com.hitanshudhawan.firebasemlkitexample.textrecognition.TextRecognitionActivity
 
 class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<MainActivityAdapter.MainActivityViewHolder>() {
@@ -25,7 +26,7 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
 
             0 -> {
                 holder.image.setImageResource(R.mipmap.text_recognition)
-                holder.heading.text = "Text recognition"
+                holder.heading.setText(R.string.text_recognition)
                 holder.description.text = "Recognize and extract text from images"
                 holder.view.setOnClickListener {
                     context.startActivity(Intent(context, TextRecognitionActivity::class.java))
@@ -34,7 +35,7 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
 
             1 -> {
                 holder.image.setImageResource(R.mipmap.face_detection)
-                holder.heading.text = "Face detection"
+                holder.heading.setText(R.string.face_detection)
                 holder.description.text = "Detect faces and facial landmarks"
                 holder.view.setOnClickListener {
                     context.startActivity(Intent(context, FaceDetectionActivity::class.java))
@@ -43,7 +44,7 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
 
             2 -> {
                 holder.image.setImageResource(R.mipmap.barcode_scanning)
-                holder.heading.text = "Barcode scanning"
+                holder.heading.setText(R.string.barcode_scanning)
                 holder.description.text = "Scan and process barcodes"
                 holder.view.setOnClickListener {
                     context.startActivity(Intent(context, BarcodeScanningActivity::class.java))
@@ -52,8 +53,11 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
 
             3 -> {
                 holder.image.setImageResource(R.mipmap.image_classification)
-                holder.heading.text = "Image labeling"
+                holder.heading.setText(R.string.image_labeling)
                 holder.description.text = "Identify objects, locations, activities, animal species, products, and more"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, ImageLabelingActivity::class.java))
+                }
             }
         }
     }

@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="ocr,face,barcode" />
+            android:value="ocr,face,barcode,label" />
 
         <activity
             android:name=".MainActivity"
@@ -36,6 +36,11 @@
         <activity
             android:name=".barcodescanning.BarcodeScanningActivity"
             android:label="@string/barcode_scanning"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".imagelabeling.ImageLabelingActivity"
+            android:label="@string/image_labeling"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
