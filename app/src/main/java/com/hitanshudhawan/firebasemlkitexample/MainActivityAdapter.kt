@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
 import com.hitanshudhawan.firebasemlkitexample.textrecognition.TextRecognitionActivity
 
 class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<MainActivityAdapter.MainActivityViewHolder>() {
@@ -34,6 +35,9 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
                 holder.image.setImageResource(R.mipmap.face_detection)
                 holder.heading.text = "Face detection"
                 holder.description.text = "Detect faces and facial landmarks"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, FaceDetectionActivity::class.java))
+                }
             }
 
             2 -> {

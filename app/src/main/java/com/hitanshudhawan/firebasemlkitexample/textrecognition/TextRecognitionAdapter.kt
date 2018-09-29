@@ -1,5 +1,6 @@
 package com.hitanshudhawan.firebasemlkitexample.textrecognition
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -14,6 +15,7 @@ class TextRecognitionAdapter(private val context: Context, private val textRecog
         return TextRecognitionViewHolder(LayoutInflater.from(context).inflate(R.layout.item_text_recognition, parent, false))
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: TextRecognitionViewHolder, position: Int) {
         holder.text1.text = textRecognitionModels[position].id.toString()
         holder.text2.text = textRecognitionModels[position].text
