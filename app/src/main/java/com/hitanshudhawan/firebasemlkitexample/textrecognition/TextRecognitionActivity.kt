@@ -3,28 +3,36 @@ package com.hitanshudhawan.firebasemlkitexample.textrecognition
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.design.widget.BottomSheetBehavior
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.google.firebase.ml.vision.FirebaseVision
+import com.google.firebase.ml.vision.common.FirebaseVisionImage
+import com.google.firebase.ml.vision.text.FirebaseVisionText
 import com.hitanshudhawan.firebasemlkitexample.R
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_text_recognition.*
-import android.graphics.Canvas
-import com.google.firebase.ml.vision.common.FirebaseVisionImage
-import com.google.firebase.ml.vision.FirebaseVision
-import com.google.firebase.ml.vision.text.FirebaseVisionText
 
 class TextRecognitionActivity : AppCompatActivity() {
 
     private val imageView by lazy { findViewById<ImageView>(R.id.text_recognition_image_view)!! }
 
-    private val bottomSheet by lazy { findViewById<LinearLayout>(R.id.bottom_sheet)!! }
     private val bottomSheetButton by lazy { findViewById<FrameLayout>(R.id.bottom_sheet_button)!! }
+    private val bottomSheetRecyclerView by lazy { findViewById<RecyclerView>(R.id.bottom_sheet_recycler_view)!! }
+    private val bottomSheetBehavior by lazy { BottomSheetBehavior.from(findViewById(R.id.bottom_sheet)!!) }
+
+    private val textRecognitionModels = ArrayList<TextRecognitionModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +43,9 @@ class TextRecognitionActivity : AppCompatActivity() {
         bottomSheetButton.setOnClickListener {
             CropImage.activity().start(this)
         }
+
+        bottomSheetRecyclerView.layoutManager = LinearLayoutManager(this)
+        bottomSheetRecyclerView.adapter = TextRecognitionAdapter(this, textRecognitionModels)
     }
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -57,6 +68,9 @@ class TextRecognitionActivity : AppCompatActivity() {
         }
 
         imageView.setImageBitmap(null)
+        textRecognitionModels.clear()
+        bottomSheetRecyclerView.adapter?.notifyDataSetChanged()
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         showProgress()
 
         val firebaseVisionImage = FirebaseVisionImage.fromBitmap(image)
@@ -69,12 +83,13 @@ class TextRecognitionActivity : AppCompatActivity() {
 
                     imageView.setImageBitmap(mutableImage)
                     hideProgress()
+                    bottomSheetRecyclerView.adapter?.notifyDataSetChanged()
+                    bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
                 }
                 .addOnFailureListener {
                     Toast.makeText(this, "There was some error", Toast.LENGTH_SHORT).show()
                     hideProgress()
                 }
-
     }
 
     private fun recognizeText(result: FirebaseVisionText?, image: Bitmap?) {
@@ -84,9 +99,22 @@ class TextRecognitionActivity : AppCompatActivity() {
         }
 
         val canvas = Canvas(image)
+        val rectPaint = Paint()
+        rectPaint.color = Color.RED
+        rectPaint.style = Paint.Style.STROKE
+        rectPaint.strokeWidth = 4F
+        val textPaint = Paint()
+        textPaint.color = Color.RED
+        textPaint.textSize = 40F
 
+        var index = 0
         for (block in result.textBlocks) {
-            // todo
+            for (line in block.lines) {
+
+                canvas.drawRect(line.boundingBox, rectPaint)
+                canvas.drawText(index.toString(), line.cornerPoints!![2].x.toFloat(), line.cornerPoints!![2].y.toFloat(), textPaint)
+                textRecognitionModels.add(TextRecognitionModel(index++, line.text))
+            }
         }
     }
 
