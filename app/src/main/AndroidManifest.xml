@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="ocr,face" />
+            android:value="ocr,face,barcode" />
 
         <activity
             android:name=".MainActivity"
@@ -32,6 +31,11 @@
         <activity
             android:name=".facedetection.FaceDetectionActivity"
             android:label="@string/face_detection"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".barcodescanning.BarcodeScanningActivity"
+            android:label="@string/barcode_scanning"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />

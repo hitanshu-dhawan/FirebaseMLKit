@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.hitanshudhawan.firebasemlkitexample.barcodescanning.BarcodeScanningActivity
 import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
 import com.hitanshudhawan.firebasemlkitexample.textrecognition.TextRecognitionActivity
 
@@ -44,6 +45,9 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
                 holder.image.setImageResource(R.mipmap.barcode_scanning)
                 holder.heading.text = "Barcode scanning"
                 holder.description.text = "Scan and process barcodes"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, BarcodeScanningActivity::class.java))
+                }
             }
 
             3 -> {

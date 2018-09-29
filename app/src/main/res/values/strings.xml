@@ -4,4 +4,5 @@
     <string name="firebase_ml_kit">Firebase ML Kit</string>
     <string name="text_recognition">Text Recognition</string>
     <string name="face_detection">Face Detection</string>
+    <string name="barcode_scanning">Barcode Scanning</string>
 </resources>
