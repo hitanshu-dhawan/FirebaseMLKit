@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        supportActionBar?.setTitle(R.string.firebase_ml_kit)
 
         initRecyclerView()
     }
@@ -22,18 +23,5 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView() {
         main_activity_recycler_view.layoutManager = LinearLayoutManager(this)
         main_activity_recycler_view.adapter = MainActivityAdapter(this)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            // todo
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Firebase ML Kit Example</string>
+    <string name="app_name">ML Kit Example</string>
 
     <string name="firebase_ml_kit">Firebase ML Kit</string>
     <string name="text_recognition">Text Recognition</string>
