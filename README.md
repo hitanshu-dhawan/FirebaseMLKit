@@ -9,7 +9,7 @@ It helps them to know their users better and provide them with a better experien
 
 So, as a mobile developer, it is important for us to integrate some kind of intelligence into our apps for a better user experience.
 
-# Firebase ML Kit Series
+# :chart_with_upwards_trend: Firebase ML Kit Series
 <b>In this series of articles, we will deep dive into different ML Kit APIs that it offers…</b>
 <ul>
 <li><b><a href='http://hitanshudhawan.com/'>ML Kit Introduction</a></b></li>
