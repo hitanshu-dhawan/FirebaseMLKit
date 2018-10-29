@@ -25,3 +25,13 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <img src="/images/MLKitTextRecognition1.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition2.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition3.gif" height=512 width=288></img>
+
+### Barcode Scanning
+<img src="/images/MLKitBarcodeScanning1.gif" height=512 width=288></img>
+<img src="/images/MLKitBarcodeScanning2.gif" height=512 width=288></img>
+<img src="/images/MLKitBarcodeScanning3.gif" height=512 width=288></img>
+
+### Image Labeling
+<img src="/images/MLKitImageLabeling1.gif" height=512 width=288></img>
+<img src="/images/MLKitImageLabeling2.gif" height=512 width=288></img>
+<img src="/images/MLKitImageLabeling3.gif" height=512 width=288></img>
