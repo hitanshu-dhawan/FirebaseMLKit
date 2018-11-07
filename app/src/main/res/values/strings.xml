@@ -6,4 +6,5 @@
     <string name="face_detection">Face Detection</string>
     <string name="barcode_scanning">Barcode Scanning</string>
     <string name="image_labeling">Image Labeling</string>
+    <string name="landmark_recognition">Landmark Recognition</string>
 </resources>

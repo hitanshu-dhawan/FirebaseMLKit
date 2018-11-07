@@ -12,6 +12,7 @@ import android.widget.TextView
 import com.hitanshudhawan.firebasemlkitexample.barcodescanning.BarcodeScanningActivity
 import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
 import com.hitanshudhawan.firebasemlkitexample.imagelabeling.ImageLabelingActivity
+import com.hitanshudhawan.firebasemlkitexample.landmarkrecognition.LandmarkRecognitionActivity
 import com.hitanshudhawan.firebasemlkitexample.textrecognition.TextRecognitionActivity
 
 class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<MainActivityAdapter.MainActivityViewHolder>() {
@@ -59,10 +60,19 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
                     context.startActivity(Intent(context, ImageLabelingActivity::class.java))
                 }
             }
+
+            4 -> {
+                holder.image.setImageResource(R.mipmap.landmark_recognition)
+                holder.heading.setText(R.string.landmark_recognition)
+                holder.description.text = "Identify popular landmarks in an image"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, LandmarkRecognitionActivity::class.java))
+                }
+            }
         }
     }
 
-    override fun getItemCount() = 4
+    override fun getItemCount() = 5
 
     class MainActivityViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val view = itemView
