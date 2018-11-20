@@ -14,9 +14,10 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <ul>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-introduction-1f5e591b1daf'>Firebase ML Kit 101 : Introduction</a></b></li>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-text-recognition-3c88f468bff6'>Firebase ML Kit 101 : Text Recognition</a></b></li>
-<li><b>Firebase ML Kit 101 : Face Detection </b></li>
+<li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-face-detection-5057190e58c0'>Firebase ML Kit 101 : Face Detection</a></b></li>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-barcode-scanning-9207e9613d3b'>Firebase ML Kit 101 : Barcode Scanning</a></b></li>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-image-labeling-8078784205cb'>Firebase ML Kit 101 : Image Labeling</a></b></li>
+<li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-landmark-recognition-83cab860c0ba'>Firebase ML Kit 101 : Landmark Recognition</a></b></li>
 </ul>
 
 # Have a Look
@@ -25,6 +26,11 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <img src="/images/MLKitTextRecognition1.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition2.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition3.gif" height=512 width=288></img>
+
+### Face Detection
+<img src="/images/MLKitFaceDetection1.gif" height=512 width=288></img>
+<img src="/images/MLKitFaceDetection2.gif" height=512 width=288></img>
+<img src="/images/MLKitFaceDetection3.gif" height=512 width=288></img>
 
 ### Barcode Scanning
 <img src="/images/MLKitBarcodeScanning1.gif" height=512 width=288></img>
@@ -35,3 +41,11 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <img src="/images/MLKitImageLabeling1.gif" height=512 width=288></img>
 <img src="/images/MLKitImageLabeling2.gif" height=512 width=288></img>
 <img src="/images/MLKitImageLabeling3.gif" height=512 width=288></img>
+
+### Landmark Recognition
+<img src="/images/MLKitLandmarkRecognition1.gif" height=512 width=288></img>
+<img src="/images/MLKitLandmarkRecognition2.gif" height=512 width=288></img>
+<img src="/images/MLKitLandmarkRecognition3.gif" height=512 width=288></img>
+<img src="/images/MLKitLandmarkRecognition4.gif" height=512 width=288></img>
+<img src="/images/MLKitLandmarkRecognition5.gif" height=512 width=288></img>
+<img src="/images/MLKitLandmarkRecognition6.gif" height=512 width=288></img>
