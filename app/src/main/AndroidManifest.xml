@@ -48,6 +48,11 @@
             android:label="@string/landmark_recognition"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".custommodels.CustomModelsActivity"
+            android:label="@string/custom_models"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
     </application>
 

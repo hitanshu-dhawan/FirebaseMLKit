@@ -7,4 +7,5 @@
     <string name="barcode_scanning">Barcode Scanning</string>
     <string name="image_labeling">Image Labeling</string>
     <string name="landmark_recognition">Landmark Recognition</string>
+    <string name="custom_models">Custom Models</string>
 </resources>

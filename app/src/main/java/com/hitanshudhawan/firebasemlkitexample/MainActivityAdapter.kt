@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.hitanshudhawan.firebasemlkitexample.barcodescanning.BarcodeScanningActivity
+import com.hitanshudhawan.firebasemlkitexample.custommodels.CustomModelsActivity
 import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
 import com.hitanshudhawan.firebasemlkitexample.imagelabeling.ImageLabelingActivity
 import com.hitanshudhawan.firebasemlkitexample.landmarkrecognition.LandmarkRecognitionActivity
@@ -69,10 +70,19 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
                     context.startActivity(Intent(context, LandmarkRecognitionActivity::class.java))
                 }
             }
+
+            5 -> {
+                holder.image.setImageResource(R.mipmap.custom_models)
+                holder.heading.setText(R.string.custom_models)
+                holder.description.text = "If you're an experienced ML developer and ML Kit's pre-built models don't meet your needs, you can use a custom TensorFlow Lite model with ML Kit"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, CustomModelsActivity::class.java))
+                }
+            }
         }
     }
 
-    override fun getItemCount() = 5
+    override fun getItemCount() = 6
 
     class MainActivityViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val view = itemView
