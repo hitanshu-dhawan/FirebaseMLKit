@@ -5,8 +5,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#eee"
+    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".languageidentification.LanguageIdentificationActivity"
     tools:showIn="@layout/activity_language_identification">
+
+    <TextView
+        android:id="@+id/language_identification_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text:"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/language_identification_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_identification_text_view"
+        tools:text="Hello World" />
+
+    <Button
+        android:id="@+id/language_identification_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identify Language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_identification_edit_text" />
+
+    <TextView
+        android:id="@+id/language_identification_single_language_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_identification_button" />
+
+    <TextView
+        android:id="@+id/language_identification_multiple_language_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_identification_single_language_text_view" />
 
 </android.support.constraint.ConstraintLayout>
