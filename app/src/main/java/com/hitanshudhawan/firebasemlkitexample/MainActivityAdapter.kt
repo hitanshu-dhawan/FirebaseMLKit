@@ -14,6 +14,7 @@ import com.hitanshudhawan.firebasemlkitexample.custommodels.CustomModelsActivity
 import com.hitanshudhawan.firebasemlkitexample.facedetection.FaceDetectionActivity
 import com.hitanshudhawan.firebasemlkitexample.imagelabeling.ImageLabelingActivity
 import com.hitanshudhawan.firebasemlkitexample.landmarkrecognition.LandmarkRecognitionActivity
+import com.hitanshudhawan.firebasemlkitexample.languageidentification.LanguageIdentificationActivity
 import com.hitanshudhawan.firebasemlkitexample.textrecognition.TextRecognitionActivity
 
 class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<MainActivityAdapter.MainActivityViewHolder>() {
@@ -72,6 +73,15 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
             }
 
             5 -> {
+                holder.image.setImageResource(R.mipmap.language_detection)
+                holder.heading.setText(R.string.language_identification)
+                holder.description.text = "With ML Kit's on-device language identification API, you can determine the language of a string of text"
+                holder.view.setOnClickListener {
+                    context.startActivity(Intent(context, LanguageIdentificationActivity::class.java))
+                }
+            }
+
+            6 -> {
                 holder.image.setImageResource(R.mipmap.custom_models)
                 holder.heading.setText(R.string.custom_models)
                 holder.description.text = "If you're an experienced ML developer and ML Kit's pre-built models don't meet your needs, you can use a custom TensorFlow Lite model with ML Kit"
@@ -82,7 +92,7 @@ class MainActivityAdapter(private val context: Context) : RecyclerView.Adapter<M
         }
     }
 
-    override fun getItemCount() = 6
+    override fun getItemCount() = 7
 
     class MainActivityViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val view = itemView

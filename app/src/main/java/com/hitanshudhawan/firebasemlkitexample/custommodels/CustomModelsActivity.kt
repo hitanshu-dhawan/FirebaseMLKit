@@ -14,8 +14,9 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.Toast
+import com.google.firebase.ml.common.modeldownload.FirebaseLocalModelSource
+import com.google.firebase.ml.common.modeldownload.FirebaseModelManager
 import com.google.firebase.ml.custom.*
-import com.google.firebase.ml.custom.model.FirebaseLocalModelSource
 import com.hitanshudhawan.firebasemlkitexample.R
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_custom_models.*

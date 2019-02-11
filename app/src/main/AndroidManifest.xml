@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.hitanshudhawan.firebasemlkitexample">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,7 +10,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
             android:value="ocr,face,barcode,label" />
@@ -46,6 +49,11 @@
         <activity
             android:name=".landmarkrecognition.LandmarkRecognitionActivity"
             android:label="@string/landmark_recognition"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".languageidentification.LanguageIdentificationActivity"
+            android:label="@string/language_identification"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

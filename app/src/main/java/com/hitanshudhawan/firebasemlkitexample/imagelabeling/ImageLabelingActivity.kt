@@ -3,9 +3,6 @@ package com.hitanshudhawan.firebasemlkitexample.imagelabeling
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
 import android.os.Bundle
 import android.provider.MediaStore
 import android.support.design.widget.BottomSheetBehavior
@@ -18,8 +15,8 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.ml.vision.FirebaseVision
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
-import com.google.firebase.ml.vision.label.FirebaseVisionLabel
-import com.google.firebase.ml.vision.label.FirebaseVisionLabelDetectorOptions
+import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel
+import com.google.firebase.ml.vision.label.FirebaseVisionOnDeviceImageLabelerOptions
 import com.hitanshudhawan.firebasemlkitexample.R
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_image_labeling.*
@@ -74,11 +71,11 @@ class ImageLabelingActivity : AppCompatActivity() {
         showProgress()
 
         val firebaseVisionImage = FirebaseVisionImage.fromBitmap(image)
-        val options = FirebaseVisionLabelDetectorOptions.Builder()
+        val options = FirebaseVisionOnDeviceImageLabelerOptions.Builder()
                 .setConfidenceThreshold(0.7F)
                 .build()
-        val labelDetector = FirebaseVision.getInstance().getVisionLabelDetector(options)
-        labelDetector.detectInImage(firebaseVisionImage)
+        val labelDetector = FirebaseVision.getInstance().getOnDeviceImageLabeler(options)
+        labelDetector.processImage(firebaseVisionImage)
                 .addOnSuccessListener {
                     val mutableImage = image.copy(Bitmap.Config.ARGB_8888, true)
 
@@ -95,7 +92,7 @@ class ImageLabelingActivity : AppCompatActivity() {
                 }
     }
 
-    private fun labelImage(labels: List<FirebaseVisionLabel>?, image: Bitmap?) {
+    private fun labelImage(labels: List<FirebaseVisionImageLabel>?, image: Bitmap?) {
         if (labels == null || image == null) {
             Toast.makeText(this, "There was some error", Toast.LENGTH_SHORT).show()
             return
@@ -103,7 +100,7 @@ class ImageLabelingActivity : AppCompatActivity() {
 
         for (label in labels) {
 
-            imageLabelingModels.add(ImageLabelingModel(label.label, label.confidence))
+            imageLabelingModels.add(ImageLabelingModel(label.text, label.confidence))
         }
     }
 
