@@ -57,6 +57,11 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".smartreply.SmartReplyActivity"
+            android:label="@string/smart_reply"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".custommodels.CustomModelsActivity"
             android:label="@string/custom_models"
             android:parentActivityName=".MainActivity"

@@ -8,5 +8,6 @@
     <string name="image_labeling">Image Labeling</string>
     <string name="landmark_recognition">Landmark Recognition</string>
     <string name="language_identification">Language Identification</string>
+    <string name="smart_reply">Smart Reply</string>
     <string name="custom_models">Custom Models</string>
 </resources>

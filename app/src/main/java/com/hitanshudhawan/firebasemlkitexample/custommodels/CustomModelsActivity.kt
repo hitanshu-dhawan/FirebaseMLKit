@@ -14,7 +14,7 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.Toast
-import com.google.firebase.ml.common.modeldownload.FirebaseLocalModelSource
+import com.google.firebase.ml.common.modeldownload.FirebaseLocalModel
 import com.google.firebase.ml.common.modeldownload.FirebaseModelManager
 import com.google.firebase.ml.custom.*
 import com.hitanshudhawan.firebasemlkitexample.R
@@ -46,7 +46,7 @@ class CustomModelsActivity : AppCompatActivity() {
         bottomSheetRecyclerView.layoutManager = LinearLayoutManager(this)
         bottomSheetRecyclerView.adapter = CustomModelsAdapter(this, customModelsModels)
 
-        Toast.makeText(this, "Take/Pick an image of a Dog" ,Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Take/Pick an image of a Dog", Toast.LENGTH_LONG).show()
     }
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -75,10 +75,10 @@ class CustomModelsActivity : AppCompatActivity() {
         showProgress()
 
         // Configure a local model source
-        val localSource = FirebaseLocalModelSource.Builder("my_local_model")
+        val localSource = FirebaseLocalModel.Builder("my_local_model")
                 .setAssetFilePath("my_model.tflite")
                 .build()
-        FirebaseModelManager.getInstance().registerLocalModelSource(localSource)
+        FirebaseModelManager.getInstance().registerLocalModel(localSource)
 
         // Create an interpreter from your model sources
         val options = FirebaseModelOptions.Builder()
