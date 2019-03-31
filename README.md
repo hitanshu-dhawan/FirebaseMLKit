@@ -19,31 +19,32 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-image-labeling-8078784205cb'>Firebase ML Kit 101 : Image Labeling</a></b></li>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-landmark-recognition-83cab860c0ba'>Firebase ML Kit 101 : Landmark Recognition</a></b></li>
 <li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-language-identification-5a6b9453b692'>Firebase ML Kit 101 : Language Identification</a></b></li>
+<li><b><a href='https://medium.com/androidiots/firebase-ml-kit-101-smart-reply-476a8c6c72e8'>Firebase ML Kit 101 : Smart Reply</a></b></li>
 </ul>
 
 # Have a Look
 
-### Text Recognition
+## Text Recognition
 <img src="/images/MLKitTextRecognition1.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition2.gif" height=512 width=288></img>
 <img src="/images/MLKitTextRecognition3.gif" height=512 width=288></img>
 
-### Face Detection
+## Face Detection
 <img src="/images/MLKitFaceDetection1.gif" height=512 width=288></img>
 <img src="/images/MLKitFaceDetection2.gif" height=512 width=288></img>
 <img src="/images/MLKitFaceDetection3.gif" height=512 width=288></img>
 
-### Barcode Scanning
+## Barcode Scanning
 <img src="/images/MLKitBarcodeScanning1.gif" height=512 width=288></img>
 <img src="/images/MLKitBarcodeScanning2.gif" height=512 width=288></img>
 <img src="/images/MLKitBarcodeScanning3.gif" height=512 width=288></img>
 
-### Image Labeling
+## Image Labeling
 <img src="/images/MLKitImageLabeling1.gif" height=512 width=288></img>
 <img src="/images/MLKitImageLabeling2.gif" height=512 width=288></img>
 <img src="/images/MLKitImageLabeling3.gif" height=512 width=288></img>
 
-### Landmark Recognition
+## Landmark Recognition
 <img src="/images/MLKitLandmarkRecognition1.gif" height=512 width=288></img>
 <img src="/images/MLKitLandmarkRecognition2.gif" height=512 width=288></img>
 <img src="/images/MLKitLandmarkRecognition3.gif" height=512 width=288></img>
@@ -51,7 +52,12 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <img src="/images/MLKitLandmarkRecognition5.gif" height=512 width=288></img>
 <img src="/images/MLKitLandmarkRecognition6.gif" height=512 width=288></img>
 
-### Language Identification
+## Language Identification
 <img src="/images/MLKitLanguageIdentification1.jpg" height=512 width=288></img>
 <img src="/images/MLKitLanguageIdentification2.jpg" height=512 width=288></img>
 <img src="/images/MLKitLanguageIdentification3.jpg" height=512 width=288></img>
+
+## Smart Reply
+<img src="/images/MLKitSmartReply1.jpg" height=512 width=288></img>
+<img src="/images/MLKitSmartReply2.jpg" height=512 width=288></img>
+<img src="/images/MLKitSmartReply3.jpg" height=512 width=288></img>
