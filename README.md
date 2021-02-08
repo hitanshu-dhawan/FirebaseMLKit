@@ -25,24 +25,24 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 # Have a Look
 
 ## Text Recognition
-<img src="/images/MLKitTextRecognition1.gif" height=512 width=288></img>
-<img src="/images/MLKitTextRecognition2.gif" height=512 width=288></img>
-<img src="/images/MLKitTextRecognition3.gif" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitTextRecognition1.gif) | ![](/images/MLKitTextRecognition2.gif) | ![](/images/MLKitTextRecognition3.gif) |
 
 ## Face Detection
-<img src="/images/MLKitFaceDetection1.gif" height=512 width=288></img>
-<img src="/images/MLKitFaceDetection2.gif" height=512 width=288></img>
-<img src="/images/MLKitFaceDetection3.gif" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitFaceDetection1.gif) | ![](/images/MLKitFaceDetection2.gif) | ![](/images/MLKitFaceDetection3.gif) |
 
 ## Barcode Scanning
-<img src="/images/MLKitBarcodeScanning1.gif" height=512 width=288></img>
-<img src="/images/MLKitBarcodeScanning2.gif" height=512 width=288></img>
-<img src="/images/MLKitBarcodeScanning3.gif" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitBarcodeScanning1.gif) | ![](/images/MLKitBarcodeScanning2.gif) | ![](/images/MLKitBarcodeScanning3.gif) |
 
 ## Image Labeling
-<img src="/images/MLKitImageLabeling1.gif" height=512 width=288></img>
-<img src="/images/MLKitImageLabeling2.gif" height=512 width=288></img>
-<img src="/images/MLKitImageLabeling3.gif" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitImageLabeling1.gif) | ![](/images/MLKitImageLabeling2.gif) | ![](/images/MLKitImageLabeling3.gif) |
 
 ## Landmark Recognition
 <img src="/images/MLKitLandmarkRecognition1.gif" height=512 width=288></img>
@@ -53,11 +53,11 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 <img src="/images/MLKitLandmarkRecognition6.gif" height=512 width=288></img>
 
 ## Language Identification
-<img src="/images/MLKitLanguageIdentification1.jpg" height=512 width=288></img>
-<img src="/images/MLKitLanguageIdentification2.jpg" height=512 width=288></img>
-<img src="/images/MLKitLanguageIdentification3.jpg" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitLanguageIdentification1.gif) | ![](/images/MLKitLanguageIdentification2.gif) | ![](/images/MLKitLanguageIdentification3.gif) |
 
 ## Smart Reply
-<img src="/images/MLKitSmartReply1.jpg" height=512 width=288></img>
-<img src="/images/MLKitSmartReply2.jpg" height=512 width=288></img>
-<img src="/images/MLKitSmartReply3.jpg" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitSmartReply1.gif) | ![](/images/MLKitSmartReply2.gif) | ![](/images/MLKitSmartReply3.gif) |
