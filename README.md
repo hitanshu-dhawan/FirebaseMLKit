@@ -53,9 +53,9 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 ## Language Identification
 |     |     |     |
 | --- | --- | --- |
-| ![](/images/MLKitLanguageIdentification1.gif) | ![](/images/MLKitLanguageIdentification2.gif) | ![](/images/MLKitLanguageIdentification3.gif) |
+| ![](/images/MLKitLanguageIdentification1.jpg) | ![](/images/MLKitLanguageIdentification2.jpg) | ![](/images/MLKitLanguageIdentification3.jpg) |
 
 ## Smart Reply
 |     |     |     |
 | --- | --- | --- |
-| ![](/images/MLKitSmartReply1.gif) | ![](/images/MLKitSmartReply2.gif) | ![](/images/MLKitSmartReply3.gif) |
+| ![](/images/MLKitSmartReply1.jpg) | ![](/images/MLKitSmartReply2.jpg) | ![](/images/MLKitSmartReply3.jpg) |
