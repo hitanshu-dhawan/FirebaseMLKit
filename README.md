@@ -45,12 +45,10 @@ So, as a mobile developer, it is important for us to integrate some kind of inte
 | ![](/images/MLKitImageLabeling1.gif) | ![](/images/MLKitImageLabeling2.gif) | ![](/images/MLKitImageLabeling3.gif) |
 
 ## Landmark Recognition
-<img src="/images/MLKitLandmarkRecognition1.gif" height=512 width=288></img>
-<img src="/images/MLKitLandmarkRecognition2.gif" height=512 width=288></img>
-<img src="/images/MLKitLandmarkRecognition3.gif" height=512 width=288></img>
-<img src="/images/MLKitLandmarkRecognition4.gif" height=512 width=288></img>
-<img src="/images/MLKitLandmarkRecognition5.gif" height=512 width=288></img>
-<img src="/images/MLKitLandmarkRecognition6.gif" height=512 width=288></img>
+|     |     |     |
+| --- | --- | --- |
+| ![](/images/MLKitLandmarkRecognition1.gif) | ![](/images/MLKitLandmarkRecognition2.gif) | ![](/images/MLKitLandmarkRecognition3.gif) |
+| ![](/images/MLKitLandmarkRecognition4.gif) | ![](/images/MLKitLandmarkRecognition5.gif) | ![](/images/MLKitLandmarkRecognition6.gif) |
 
 ## Language Identification
 |     |     |     |
